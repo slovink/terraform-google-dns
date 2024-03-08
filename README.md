@@ -1,3 +1,33 @@
+<p align="center"> <img src="https://user-images.githubusercontent.com/50652676/62349836-882fef80-b51e-11e9-99e3-7b974309c7e3.png" width="100" height="100"></p>
+
+
+<h1 align="center">
+    Terraform google dns
+</h1>
+
+<p align="center" style="font-size: 1.2rem;">
+    Terraform module to create dns resource on google.
+     </p>
+
+<p align="center">
+
+<a href="https://www.terraform.io">
+  <img src="https://img.shields.io/badge/Terraform-v1.7.4-green" alt="Terraform">
+</a>
+<a href="https://github.com/slovink/terraform-google-dns/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
+</a>
+
+</p>
+<p align="center">
+
+<a href='https://www.facebook.com/Slovink.in=https://github.com/slovink/terraform-lables'>
+  <img title="Share on Facebook" src="https://user-images.githubusercontent.com/50652676/62817743-4f64cb80-bb59-11e9-90c7-b057252ded50.png" />
+</a>
+<a href='https://www.linkedin.com/company/101534993/admin/feed/posts/=https://github.com/slovink/terraform-lables'>
+  <img title="Share on LinkedIn" src="https://user-images.githubusercontent.com/50652676/62817742-4e339e80-bb59-11e9-87b9-a1f68cae1049.png" />
+</a>
+
 # Terraform-google-dns
 # Terraform Google Cloud Dns Module
 
@@ -22,7 +52,7 @@ To use this module, include it in your Terraform configuration. Below is an exam
 ## Example: forwarding
 ```hcl
 module "dns_forwarding_zone" {
-  source                             = "git@github.com:slovink/terraform-google-dns.git"
+  source                             = "git::https://github.com/slovink/terraform-google-dns.git?ref=v1.0.0"
   type                               = "forwarding"
   name                               = "ops-test"
   environment                        = "forwarding-zone"
@@ -46,7 +76,7 @@ module "dns_forwarding_zone" {
 
 ```hcl
 module "dns_peering_zone" {
-  source                             = "git@github.com:slovink/terraform-google-dns.git"
+  source                             = "git::https://github.com/slovink/terraform-google-dns.git?ref=v1.0.0"
   type                               = "peering"
   name                               = "ops-test"
   environment                        = "peering-zone"
@@ -65,7 +95,7 @@ module "dns_peering_zone" {
 
 ```hcl
 module "dns_private_zone" {
-  source                             = "git@github.com:slovink/terraform-google-dns.git"
+  source                             = "git::https://github.com/slovink/terraform-google-dns.git?ref=v1.0.0"
   type                               = "private"
   name                               = "ops-test"
   environment                        = "private-zone"
@@ -122,7 +152,7 @@ module "dns_private_zone" {
 
 ```hcl
 module "dns_public_zone" {
-  source                             = "git@github.com:slovink/terraform-google-dns.git"
+  source                             = "git::https://github.com/slovink/terraform-google-dns.git?ref=v1.0.0"
   type                               = "public"
   name                               = "ops-test"
   environment                        = "public-zone"
@@ -195,7 +225,7 @@ Replace **MIT** and **slovink** with the appropriate license and your informatio
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.6 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.7.4 |
 | <a name="requirement_google"></a> [google](#requirement\_google) | >= 3.50, < 5.11.0 |
 | <a name="requirement_google-beta"></a> [google-beta](#requirement\_google-beta) | >= 4.40, < 5.13.0 |
 
@@ -210,7 +240,7 @@ Replace **MIT** and **slovink** with the appropriate license and your informatio
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git@github.com:slovink/terraform-google-labels.git | n/a |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/slovink/terraform-google-labels.git | v1.0.0 |
 
 ## Resources
 

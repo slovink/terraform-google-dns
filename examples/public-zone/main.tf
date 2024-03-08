@@ -1,5 +1,5 @@
 provider "google" {
-  project = "local-concord-408802"
+  project = "testing-gcp-ops"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
@@ -8,7 +8,7 @@ provider "google" {
 #####==============================================================================
 
 module "vpc" {
-  source                                    = "git@github.com:slovink/terraform-google-network.git?ref=update/repo"
+  source                                    = "git::https://github.com/slovink/terraform-google-network.git?ref=v1.0.0"
   name                                      = "ops"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
