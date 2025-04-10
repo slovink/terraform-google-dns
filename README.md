@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://www.terraform.io">
-  <img src="https://img.shields.io/badge/Terraform-v1.7.4-green" alt="Terraform">
+  <img src="https://img.shields.io/badge/Terraform-v1.9.5-green" alt="Terraform">
 </a>
 <a href="https://github.com/slovink/terraform-google-dns/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
@@ -227,14 +227,15 @@ Replace **MIT** and **slovink** with the appropriate license and your informatio
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.5 |
 | <a name="requirement_google"></a> [google](#requirement\_google) | >= 3.50.0, < 5.11.0 |
+| <a name="requirement_google-beta"></a> [google-beta](#requirement\_google-beta) | >= 3.50.0, < 5.11.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | >= 3.50.0, < 5.11.0 |
-| <a name="provider_google-beta"></a> [google-beta](#provider\_google-beta) | n/a |
+| <a name="provider_google"></a> [google](#provider\_google) | 4.85.0 |
+| <a name="provider_google-beta"></a> [google-beta](#provider\_google-beta) | 6.29.0 |
 
 ## Modules
 

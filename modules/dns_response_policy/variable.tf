@@ -40,10 +40,10 @@ variable "network_self_links" {
   default     = []
 }
 
-variable "google_dns_response_policy" {
-  type    = string
-  default = "google_dns_response_policy.response-policy.response_policy_name"
-}
+#variable "google_dns_response_policy" {
+#  type    = string
+#  default = "google_dns_response_policy.response-policy.response_policy_name"
+#}
 
 variable "rules" {
   type = map(object({
