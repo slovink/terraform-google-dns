@@ -1,5 +1,5 @@
 provider "google" {
-  project = "local-concord-408802"
+  project = "slovink-hyperscaler"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
@@ -8,9 +8,8 @@ provider "google" {
 ##### vpc module call.
 #####==============================================================================
 module "vpc" {
-  source                                    = "cypik/vpc/google"
-  version                                   = "1.0.1"
-  name                                      = "app"
+  source                                    = "git::https://github.com/slovink/terraform-google-network.git?ref=v1.0.0"
+  name                                      = "ops"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
   network_firewall_policy_enforcement_order = "AFTER_CLASSIC_FIREWALL"
