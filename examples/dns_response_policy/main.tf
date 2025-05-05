@@ -1,5 +1,5 @@
 provider "google" {
-  project = "testing-gcp-ops"
+  project = "slovink-hyperscaler"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
@@ -21,10 +21,10 @@ module "vpc" {
 module "dns_response_policy" {
   source             = "../../modules/dns_response_policy"
   policy_name        = "dns-test"
-  name               = "ops-test"
+  name               = "app-test"
   environment        = "response-policy"
   network_self_links = [module.vpc.self_link]
-  description        = "Example DNS response policy created by terraform module slovink."
+  description        = "Example DNS response policy created by terraform module cypik."
 
   rules = {
     "override-google-com" = {
